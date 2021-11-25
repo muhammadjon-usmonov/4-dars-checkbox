@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.label{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.input-ten:checked + .icon{
+    background-image: url(..//ikonkalar/table-tennis.png);
+    background-repeat: no-repeat;
+}
+
+.input-ten:disabled +.icon{
+    background-color: #fff;
+}
+
+.input-bas:disabled +.icon{
+    opacity: 0.4;
+}
+
+
+
+.bas-item{
+    opacity: 0.4;
+}
+
+.input-vol:checked +.icon{
+    background-image: url(../ikonkalar/volleyball-ball.png);
+    background-repeat: no-repeat;
+ 
+}
+
+.input-xok:checked +.icon{
+    background-image: url(../ikonkalar/hockey-puck.png);
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.xokkey-item{
+    opacity: 0.4;
+}
+
+.icon{
+    position: absolute;
+    display: inline-block;
+    left: -50px;
+	width: 35px;
+	height: 35px;
+	background-size: 20px 20px;
+    background-position: center;
+	background-color: #fff;
+	border: 1px solid rgb(112, 108, 108);
+    border-radius: 5px;
+}
+
